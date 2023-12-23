@@ -612,7 +612,7 @@
     .welcome{
         padding-top: 0px;
         flex-direction: column;
-        background-image: url(/welpic.jpeg);
+        background-image: url(https://sraj9506.github.io/sraj9506.portfolio.io/welpic.jpeg);
         background-position: center center;
         background-size: cover;
     }
@@ -641,14 +641,14 @@
         flex-direction: column;
         min-height: 89vh;
         background-size: cover;
-        background-image: url(/about.jpeg);
+        background-image: url(https://sraj9506.github.io/sraj9506.portfolio.io/about.jpeg);
         background-position: center center;
     }
     .confilter{
         flex-direction: column;
         min-height: 89vh;
         background-size: cover;
-        background-image: url(/contact.jpg);
+        background-image: url(https://sraj9506.github.io/sraj9506.portfolio.io/contact.jpg);
         background-position: center center;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
