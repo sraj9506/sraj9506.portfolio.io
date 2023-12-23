@@ -1,0 +1,840 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:"Raleway";
+}
+.nav-toggler{
+    display: none;
+    flex-direction: column;
+    height: 10vh;
+    width: 6.5vh;
+    justify-content: space-evenly;
+    cursor: pointer;
+    position: fixed;
+    right: 35px;
+    top: 0px;
+    padding: 2.5px;
+}
+.navlogo img{
+    height: 10vh;
+    width: 10vh;
+    padding: 2.5px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 15vh;
+    align-items: center;
+    padding: 0px 5%;
+    position: fixed;
+    top: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 2;
+}
+.navlogo{
+    width: 30%;
+    text-align: center;
+}
+.navmenu{
+    display: flex;
+    flex-direction: row;
+    min-height: 15vh;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    justify-content: flex-end;
+}
+.navmenu-item{
+    margin: 0px 15px;
+    padding: 5px 15px;
+    color: black;
+    font-weight:500;
+    border-radius: 15px;
+    letter-spacing: 1px;
+}
+.navmenu-active{
+    color: white;
+    background-color: #800020;
+    box-shadow: 0px 0px 10px rgba(128, 0, 32, 0.5);
+}
+.navmenu-item:hover{
+    color: white;
+    background-color: #800020;
+    box-shadow: 0px 0px 10px rgba(128, 0, 32, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+.welcome{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 50px;
+    padding-top: 10vh;
+    align-items: center;
+}
+.leftwelcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.rightwelcome{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welname{
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(95, 115, 49);
+}
+.weltag{
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.welres{
+    margin-top: 20px;
+    color: white;
+    background-color: #800020;
+    padding: 10px 25px;
+    border: 1px solid rgb(128, 0, 32);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(128, 0, 32, 0.5);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.aboutme{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 80px;
+    padding-top: 16vh;
+    justify-content: center;
+    background-color:rgba(248, 246, 246, 0.852);
+    min-height: 100vh;
+}
+.rightabout{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.095);
+    border-radius: 15px;
+    background-color: white;
+}
+.leftabout{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abfilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.abhead{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.conhead{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.abbody{
+    letter-spacing: 1px;
+    text-align: justify;
+    color: #5f7331;
+    font-weight: 500;
+}
+.ablogo{
+    display: flex;
+    height: 100%;
+}
+.leftabout img{
+    width: 65%;
+    padding:30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.095);
+    background-color: white;
+}
+.skills{
+    padding: 0px 50px;
+    padding-top: 16vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skhead{
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.skills p{
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 5px 0px;
+}
+.skcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 20px 0px;
+}
+.skill-cards{
+    padding: 25px 0px;
+    display:grid;
+    grid-template-columns:repeat(6,150px);
+    max-width: 100%;
+}
+.skcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hexagon {
+    margin: 50px 0px;
+    width: 100px;
+    height: 55px;
+    position: relative;
+  }
+  
+  .hexagon, 
+  .hexagon:before, 
+  .hexagon:after {
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);   
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    width: 57px;
+    height: 57px;
+    transform: rotate(145deg) skew(22.5deg);
+  }
+  
+  .hexagon:before {
+    top: -29px;
+  }
+  
+  .hexagon:after {
+    top: 27px;
+  }
+  
+  .hexagon span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 55px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+.project{
+    padding: 0px 50px;
+    padding-top: 16vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(248, 246, 246, 0.852);
+}
+.prhead{
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.project p{
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 5px 0px;
+}
+.procards{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.095);
+    border-radius: 15px;
+    margin: 20px;
+    background-color: white;
+}
+.prccontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+}
+.prfilter{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0px;
+}
+.prchead{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.prcbody{
+    letter-spacing: 1px;
+    text-align: justify;
+    color: #5f7331;
+    font-weight: 500;
+}
+.procards img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.contactme{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 80px;
+    padding-top: 16vh;
+    justify-content: center;
+    background-color:rgba(248, 246, 246, 0.852);
+    min-height: 100vh;
+    background-color: white ;
+}
+.confilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.leftcon{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightcon{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+}
+.conbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.input-group{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.label{
+    background-color: rgba(95, 115, 49,0.8);
+    margin: 10px 0px;
+    padding: 10px 17.5px;
+    border-radius: 25px; 
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.textbox{
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px 0px;
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color:#800020;
+    border: 3px solid #5f7331;
+    border-left: none;
+}
+::placeholder{
+    color: #800020;
+}
+:-ms-input-placeholder{
+    color: #800020;
+}
+.conbody textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0px;
+    background-color: white;
+    resize: none;
+    color: #800020;
+    border: 3px solid #5f7331;
+}
+.textbox:focus-visible{
+    outline: none;
+    border: 3px solid rgba(128, 0, 32);
+    border-left: none;
+}
+.conbody textarea:focus-visible{
+    outline: none;
+    border: 3px solid rgba(128, 0, 32);
+}
+.send{
+    color: white;
+    background-color: #800020;
+    padding: 10px 25px;
+    border: 1px solid rgb(128, 0, 32);
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: 3px solid #800020;
+}
+.send:hover{
+    color: #800020;
+    background-color: white;
+    border: 3px solid #800020;
+    transition: all 0.2s;
+}
+.leftcon img{
+    width: 62.5%;
+}
+.rights{
+    width: 100%;
+    margin: 10px;
+    display: none;
+    text-align: end;
+}
+.final{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 1200px) {
+     .aboutme{
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 25px;
+    }
+    .contactme{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+      }
+    .rightabout{
+        width: 55%;
+    }
+    .rightcon{
+       width: 45%; 
+    }
+    .leftabout{
+        width: 45%;
+    }
+    .leftcon{
+        width: 55%;
+    }
+    .leftabout img{
+        width: 75%;
+    }
+    .leftcon img{
+        width: 72.5%;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .navbar{
+        padding: 0px;
+    }
+    .skill-cards {
+        grid-template-columns: repeat(6,120px);
+        font-size: 13px;
+    }
+    .hexagon{
+        transform: scale(0.9);
+    }
+    .skills{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .prchead{
+        font-size: 25px;
+    }
+    .prcbody{
+        font-size: 13px;
+    }
+    .prccontent{
+        padding: 10px 20px;
+    }
+    .rightwelcome{
+        width: 60%;
+    }
+    .leftwelcome{
+        width: 50%;
+    }
+    .rightcon{
+        width: 40%;
+        padding: 0px 20px ;
+    }
+    .leftcon{
+        width: 50%;
+    }
+    .leftcon img{
+        width: 82.5%;
+    }
+    .welcome{
+        padding-right: 0px;
+    }
+    .weltag{
+        font-size: 50px;
+    }
+    .rightwelcome img{
+        width: 85% !important;
+    }
+    .navlogo{
+        width: 20%;
+        text-align: right;
+    }
+    .navmenu{
+        width: 80%;
+    }
+ }
+ @media only screen and (max-width: 768px) {
+    .rights{
+        display: block;
+    }
+    .right{
+        display: none;
+    }
+    .navlogo{
+        width: min-content;
+        margin-left: 35px;
+    }
+    .nav-toggler{
+        display: flex;
+    }
+    .bar1,.bar2,.bar3{
+        height: 10%;
+        border-radius: 5px;
+        width: 100%;
+        background-color: #800020;
+    }
+    .welcontainer{
+        text-align: center;
+    }
+    .welcome{
+        padding-left: 0px;
+    }
+    .aboutme{
+        padding-top: 11vh;
+    }
+    .contactme{
+        padding-top: 11vh;
+    }
+    .skills{
+        padding-top: 11vh;
+    }
+    .project{
+        padding-top: 11vh;
+    }
+    .weltag{
+        font-size: 65px;
+    }
+    .skill-cards {
+        grid-template-columns: repeat(3,175px);
+    }
+    .hexagon{
+        transform: scale(1);
+
+    }
+    .prfilter{
+        flex-direction: column;
+    }
+    .procards{
+        width: 100%;
+    }
+    .prchead{
+        font-size: 35px;
+    }
+    .prcbody{
+        font-size: 15px;
+    }
+    .prccontent{
+        padding: 20px 40px;
+    }
+    .rightwelcome{
+        display: none;
+    }
+    .leftwelcome{
+        width: 100%;
+        min-height: 100vh;
+        backdrop-filter: blur(4px);
+        background-color:rgba(255,255,255,0.7);
+    }
+    .welcome{
+        padding-top: 0px;
+        flex-direction: column;
+        background-image: url(/welpic.jpeg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .leftabout{
+        display: none;
+    }
+    .leftcon{
+        display: none;
+    }
+    .rightabout{
+        width: 100%;
+        min-height: 89vh;
+        backdrop-filter: blur(4px);
+        background-color:rgba(255,255,255,0.7);
+        align-items: center;
+    }
+    .rightcon{
+        width: 100%;
+        min-height: 89vh;
+        backdrop-filter: blur(4px);
+        background-color:rgba(255,255,255,0.5);
+        align-items: center;
+        border-radius: 15px;
+    }
+    .abfilter{
+        flex-direction: column;
+        min-height: 89vh;
+        background-size: cover;
+        background-image: url(/about.jpeg);
+        background-position: center center;
+    }
+    .confilter{
+        flex-direction: column;
+        min-height: 89vh;
+        background-size: cover;
+        background-image: url(/contact.jpg);
+        background-position: center center;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+    }
+    .navbar{
+        display: block;
+        min-height: 10vh;
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+    .navmenu{
+        min-height: 10vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        opacity: 0;
+    }
+    .navmenu-item{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0px;
+        border: 1px solid rgba(237, 233, 233, 0.779);
+        border-radius: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        margin: 0px;
+    }
+    .navmenu-active{
+        box-shadow: none;
+    }
+    .navmenu-item:last-child{
+        border-bottom: none;
+    }
+    .navmenu-item:last-child:hover{
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: none;
+    }
+    .navmenu-item:hover{
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    .conbody{
+        width: 60%;
+    }
+ }
+ @media only screen and (max-width: 576px) {
+    .conbody{
+        width: 75%;
+    }
+    .weltag{
+        font-size: 55px;
+    }
+    .skill-cards {
+        grid-template-columns: repeat(2,175px);
+    }
+    .prchead{
+        font-size: 25px;
+    }
+    .prcbody{
+        font-size: 13px;
+    }
+    .prccontent{
+        padding: 10px 20px;
+    }
+    .abhead{
+        font-size: 25px;
+    }
+    .rightabout{
+        padding: 15px;
+    }
+    .aboutme{
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contactme{
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .abbody{
+        font-size: 15px;
+    }
+    .procards img{
+        margin: 7.5px;
+    }
+ }
+ @media only screen and (max-width: 359px) {
+    .skill-cards {
+        grid-template-columns: repeat(1,200px);
+    }
+    .procards img{
+        margin: 5px;
+    }
+    .project{
+        padding: 0px 25px;
+    }
+    .weltag{
+        font-size: 40px;
+    }
+    .conbody{
+        width: 100%;
+    }
+ }
+ .br1in{
+    position:absolute;
+    top:5vh;
+    animation: br1animin 0.5s;
+    transform:rotate(135deg);
+ }
+ .br2in{
+     display:none;
+    }
+    .br3in{
+     position:absolute;
+     top:5vh;
+     animation: br3animin 0.5s;
+     transform:rotate(-135deg);
+ }
+ @keyframes br1animin {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(135deg);
+    }
+ }
+ @keyframes br3animin {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(-135deg);
+    }
+ }
+ .br1out{
+    position:static;
+    animation: br1animout 0.5s;
+    transform:rotate(0deg);
+ }
+ .br2out{
+     display:block;
+     animation: br2animout 0.5s;
+}
+    .br3out{
+     position:static;
+     animation: br3animout 0.5s;
+     transform:rotate(0deg);
+ }
+ @keyframes br1animout {
+    0%{
+        transform:rotate(135deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+ }
+ @keyframes br2animout {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(180deg);
+    }
+ }
+ @keyframes br3animout {
+    0%{
+        transform:rotate(-135deg);
+    }
+    100%{
+        transform:rotate(-0deg);
+    }
+ }
+ .navslidein{
+    overflow: hidden;
+    max-height: auto;
+    transition: max-height 1s ease;
+ }
+.navslideout{
+    overflow: hidden;
+    max-height: 10vh;
+    transition: max-height 1s ease;
+}
+.navhide{
+    overflow: hidden;
+    max-height: 10vh;
+}
