@@ -698,7 +698,7 @@
  }
  @media only screen and (max-width: 576px) {
     .conbody{
-        width: 75%;
+        width: 85%;
     }
     .weltag{
         font-size: 55px;
@@ -737,6 +737,9 @@
     .procards img{
         margin: 7.5px;
     }
+         .project{
+        padding: 0px 25px;
+    }
  }
  @media only screen and (max-width: 359px) {
     .skill-cards {
@@ -744,9 +747,6 @@
     }
     .procards img{
         margin: 5px;
-    }
-    .project{
-        padding: 0px 25px;
     }
     .weltag{
         font-size: 40px;
